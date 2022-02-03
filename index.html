@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<title>Nvisio | Home</title>
+</head>
+<body>
+	<section class="showcase">
+		<header>
+			<div class="logo">
+				<a class="navbar-brand" href="index.html">
+	                <img src="img/logo.png" height="30" alt="Logo">
+	            </a>
+			</div>
+			
+			<div class="navbar" >
+				<div id="hamburger" class="hamburger"  onclick="openMenu()">
+            		<div class="one"></div>
+            		<div class="two"></div>
+            		<div class="three"></div>
+            	</div>
+			</div>
+			<div class="nav-menu">
+				<nav id="menu" >
+			    	<ul>
+			    		<li class="block-menu"><a href="#" >Home</a></li>
+			    		<li class="inline-menu"><a href="#">About Us /</a><a href="#">Team /</a><a href="#">Career</a></li>
+			    		<li class="block-menu"><a href="#">Our Work</a><a href="#" class="project"><span>Start your Project</span></a></li>
+			    		<li class="block-menu"><a href="#">Services</a></li>
+			    		<li class="block-menu"><a href="#">Contact</a></li>
+			    	</ul>
+			    </nav>
+			    <div class="footer">
+			    		<p>1asdasfds</p>
+			    		<p>2asdfadsfas</p>
+			    		<p>3asdfdasfsd</p>
+			    		
+			    	</div>
+		    </div>
+            <!-- <div id="toggle" class="toggle" onclick="openMenu()">
+            	<div class="hamburger">
+            		<div class="one"></div>
+            		<div class="two"></div>
+            		<div class="three"></div>
+            	</div>
+            </div> -->
+		</header>
+		<div class="scroll-snip">
+			<video src="video/video-1.mp4" muted loop autoplay></video>
+	        <div class="overlay"></div>
+	        <div class="text">
+	        	<h1>SPARKS OF</h1>
+	        	<h1>IMAGINATION LIGHT UP</h1>
+	        	<h1>EVERY DESIGN</h1>
+	        	<p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	        	<a href="#"><span>See what’s possible with Nvisio</span></a>
+	        </div>
+		</div>
+
+
+	</section>
+
+    <script>
+    	var menu = document.getElementById("menu");
+    	var hamburger = document.getElementById("hamburger")
+
+    	function openMenu(){
+    		menu.classList.toggle("menu");
+    		hamburger.classList.toggle("close");
+
+    	}
+    	
+    </script>
+
+</body>
+</html>
