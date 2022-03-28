@@ -46,7 +46,8 @@ $(document).ready(function() {
         nav: true,
         items: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
+        navText: ["", "🠒"],
         autoplayTimeout: 7000,
 
     })
