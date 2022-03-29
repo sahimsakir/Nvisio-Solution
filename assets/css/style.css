@@ -12,6 +12,7 @@
 html {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -400,6 +401,81 @@ header.disable {
 
 /*----- End Overlay -----*/
 
+.horizontal-lines {
+    position: sticky;
+    overflow: hidden;
+    bottom: 5%;
+}
+
+.lines-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    left: 10%;
+}
+
+.horizontal-lines img {
+    width: 5%;
+}
+
+.line-one {
+    width: 6%;
+    height: 3px;
+    background: white;
+    transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+.horizontal-lines a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.line-one.active {
+    width: 12%;
+}
+
+.line-two {
+    width: 6%;
+    height: 3px;
+    background: white;
+    transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+.line-two.active {
+    width: 12%;
+}
+
+.line-three {
+    width: 6%;
+    height: 3px;
+    background: white;
+    transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+.line-three.active {
+    width: 12%;
+}
+
+.main-body {
+    position: sticky;
+    width: 100%;
+    height: 100%;
+}
+
 .portfolio-container {
     margin-bottom: 15rem;
 }
@@ -701,10 +777,12 @@ p {
     position: relative;
     width: 5rem;
     height: 2rem;
+    font-size: 3rem !important;
+    line-height: 2rem !important;
     color: #fff !important;
-    border: transparent !important;
+    border: 1px solid transparent !important;
     border-radius: 25px !important;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     left: 10%;
 }
 
