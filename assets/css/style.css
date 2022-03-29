@@ -157,11 +157,46 @@ header.disable {
 
 .nav-menu.active .main-menu {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
+
+.nav-menu.active .main-menu .nav-links {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.nav-menu.active .main-menu .footer {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.nav-menu.active .main-menu .footer .footer-text {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* .nav-menu.active .main-menu .footer .social-links {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} */
 
 .nav-menu.active .main-menu .nav-links ul li {
     list-style: none;
@@ -176,6 +211,10 @@ header.disable {
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     padding: 0;
 }
 
@@ -186,6 +225,46 @@ header.disable {
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li a {
     font-size: 1.5rem;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-list {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #00B7F1;
+    background: transparent;
+    font-size: 1rem;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button p {
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button i {
+    display: none;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button:hover {
+    width: 180px;
+    background: #00B7F1;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button:hover i {
+    display: block;
 }
 
 
