@@ -7,6 +7,8 @@ var distFromTop = document.querySelector(".horizontal-section").offsetTop;
 
 var scrollDistance = distFromTop + horLength - windowWidth;
 
+var scrollHeader = scrollDistance + 50;
+
 var hl1 = document.querySelector(".line-one");
 var hl2 = document.querySelector(".line-two");
 var hl3 = document.querySelector(".line-three");
@@ -64,10 +66,10 @@ function openMenu() {
     navMenu.classList.toggle('active');
     hrSection.classList.toggle('active');
 }
-// window.addEventListener("scroll",function(){
-//   var header = document.querySelector('header');
-//   header.classList.toggle("disable", window.scrollY > scrollHeader);
-// })
+window.addEventListener("scroll", function() {
+    var header = document.querySelector('header');
+    header.classList.toggle("disable", window.scrollY > scrollHeader);
+})
 
 $(document).ready(function() {
     var owl = $('.owl-carousel');
