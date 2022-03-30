@@ -189,15 +189,6 @@ header.disable {
     justify-content: space-between;
 }
 
-
-/* .nav-menu.active .main-menu .footer .social-links {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .nav-menu.active .main-menu .nav-links ul li {
     list-style: none;
     font-family: 'Helvetica Neue', sans-serif;
@@ -315,7 +306,7 @@ header.disable {
     top: 0;
     left: 0;
     color: white;
-    background: transparent linear-gradient(270deg, #14263E00 0%, #192B44 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(90deg, rgba(20, 38, 62, 1) 0%, rgba(25, 43, 68, 1) 25%, rgba(0, 212, 255, 0) 65%);
     width: 50%;
     height: 100%;
     z-index: 50;
@@ -876,4 +867,142 @@ p {
 .testimonials .owl-carousel .owl-next:hover {
     border: 1px solid white !important;
     background: transparent !important;
+}
+
+.this-is-us-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, rgba(6, 30, 54, 1) 0%, rgba(6, 30, 54, 1) 25%, transparent 65%), url(../img/Mask_Group_10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.this-is-us-container .container {
+    display: flex;
+}
+
+.this-is-us-container .container h1 {
+    color: white;
+}
+
+.this-is-us-container .container p {
+    color: white;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(6, 30, 54, 1) 0%, rgba(6, 30, 54, 1) 25%, transparent 65%), url(../img/Footer_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer-container .footer-top {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.footer-container .footer-bottom {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0px 40px;
+}
+
+.footer-container .footer-bottom .footer-text {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container .container {
+    display: flex;
+}
+
+.footer-container .container h1 {
+    color: white;
+}
+
+.footer-container .container span {
+    color: #24BCFF;
+}
+
+.footer-container .container p {
+    color: white;
+}
+
+.footer-container .contact-us {
+    font-size: 1.05rem;
+}
+
+.footer-container .contact-us div {
+    margin: 10px 0px;
+}
+
+.footer-container .contact-us i {
+    color: #24BCFF;
+}
+
+.footer-container .contact-us span {
+    padding: 0px 20px;
+    color: white;
+}
+
+.footer-container .contact-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-container .contact-form input {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #f5f5f5;
+    margin-right: 10px;
+    width: 14rem;
+    height: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-container .contact-form textarea {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #f5f5f5;
+    margin-right: 10px;
+    width: 29rem;
+    height: 5rem;
+    color: white;
+    resize: none;
+}
+
+.footer-container .contact-form button {
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 1px solid #00B7F1;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
+}
+
+.footer-container .contact-form button:hover {
+    background-color: #00B7F1;
 }
