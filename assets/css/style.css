@@ -258,41 +258,59 @@ header.disable {
     display: block;
 }
 
-
-/*----- Horizontal Scroll -----*/
-
-.sticky-wrapper {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+.carousel-item {
+    font-family: 'Bahnschrift', sans-serif;
 }
 
-.element-wrapper {
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 100%;
-}
-
-.element video {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
+.carousel-item video {
     object-fit: cover;
 }
 
-.horizontal-section.active {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+.w-100 {
+    height: 100vh;
 }
 
+.carousel-caption {
+    width: 40%;
+    height: 100%;
+    top: 0 !important;
+    left: 10% !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/*----- End Horizontal Scroll -----*/
+.carousel-caption h1 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.carousel-caption p {
+    line-height: 1.5;
+}
+
+.btn {
+    padding: 0.4rem 1.2rem;
+    background-color: #1179e7;
+    border: 2px solid #1179e7;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #1179e7;
+}
 
 
 /*----- Overlay -----*/
@@ -309,7 +327,6 @@ header.disable {
     background: linear-gradient(90deg, rgba(20, 38, 62, 1) 0%, rgba(25, 43, 68, 1) 25%, rgba(0, 212, 255, 0) 65%);
     width: 50%;
     height: 100%;
-    z-index: 50;
     text-align: justify;
 }
 
@@ -330,7 +347,7 @@ header.disable {
     font-size: 0.8rem;
 }
 
-.overlay-1 div a {
+.carousel-caption .btn-1 {
     display: flex;
     width: 50%;
     height: 40px;
@@ -348,46 +365,13 @@ header.disable {
     transition: 0.3s;
 }
 
-.overlay-1 a:hover {
+.carousel-caption a:hover {
     background: transparent;
     font-size: 0.75rem;
     color: white;
 }
 
-.overlay-2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 100%;
-    color: white;
-    background: transparent;
-    width: 50%;
-    height: 100%;
-    z-index: 50;
-    text-align: justify;
-}
-
-.overlay-2 div {
-    width: 60%;
-}
-
-.overlay-2 div h1 {
-    width: 100%;
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0px;
-}
-
-.overlay-2 div p {
-    width: 100%;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.8rem;
-}
-
-.overlay-2 div a {
+.carousel-caption .btn-2 {
     display: flex;
     width: 50%;
     height: 40px;
@@ -405,46 +389,7 @@ header.disable {
     transition: 0.3s;
 }
 
-.overlay-2 a:hover {
-    background: transparent;
-    font-size: 0.75rem;
-    color: white;
-}
-
-.overlay-3 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 200%;
-    color: white;
-    background: transparent;
-    width: 50%;
-    height: 100%;
-    z-index: 50;
-    text-align: justify;
-}
-
-.overlay-3 div {
-    width: 60%;
-}
-
-.overlay-3 div h1 {
-    width: 100%;
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0px;
-}
-
-.overlay-3 div p {
-    width: 100%;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.8rem;
-}
-
-.overlay-3 div a {
+.carousel-caption .btn-3 {
     display: flex;
     width: 50%;
     height: 40px;
@@ -462,10 +407,9 @@ header.disable {
     transition: 0.3s;
 }
 
-.overlay-3 a:hover {
-    background: transparent;
-    font-size: 0.75rem;
-    color: white;
+.main-page.active {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 
