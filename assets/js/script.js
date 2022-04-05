@@ -11,7 +11,7 @@ function openMenu() {
 }
 window.addEventListener("scroll", function() {
     var header = document.querySelector('header');
-    header.classList.toggle("disable", window.scrollY > scrollHeader);
+    header.classList.toggle("disable", window.scrollY > 500);
 })
 
 $(document).ready(function() {
