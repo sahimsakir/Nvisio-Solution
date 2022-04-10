@@ -117,6 +117,7 @@ header.disable {
     from {
         transform: translateX(50px);
     }
+
     to {
         transform: translateX(0px);
     }
@@ -182,15 +183,44 @@ header.disable {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
     color: #fff;
     padding: 20px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active .main-menu .nav-links ul li a:hover {
+    color: #2AEFFF;
 }
 
 .nav-menu.active .main-menu .footer .footer-text {
     width: 60%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+
+.nav-menu.active .main-menu .footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.active .main-menu .footer a:hover {
+    color: #2AEFFF;
+}
+
+.nav-menu.active .main-menu .footer .social-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu.active .main-menu .footer .social-icons a {
+    color: #657688;
+    margin-bottom: 10px;
+}
+
+.nav-menu.active .main-menu .footer .social-icons a:hover {
+    color: #fff;
 }
 
 .nav-menu.active .main-menu .nav-links ul li {
@@ -203,6 +233,7 @@ header.disable {
     text-decoration: none;
     color: white;
     font-size: 2.25rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul {
@@ -214,12 +245,20 @@ header.disable {
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li {
-    display: inline;
+    display: flex;
+    align-items: center;
     font-weight: normal;
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li a {
     font-size: 1.5rem;
+}
+
+.nav-menu.active .main-menu .nav-links .inline-list ul li span {
+    margin: 0px 4px 0px 8px;
+    font-size: 1.75rem;
+    color: white;
+    opacity: 0.16;
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li .nav-list {
@@ -234,7 +273,7 @@ header.disable {
     justify-content: center;
     width: 150px;
     height: 40px;
-    border: 1px solid #00B7F1;
+    border: 1px solid #2AEFFF;
     background: transparent;
     font-size: 1rem;
     border-radius: 25px;
@@ -243,6 +282,7 @@ header.disable {
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button p {
+    color: white;
     margin: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -250,12 +290,13 @@ header.disable {
 .nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button i {
     display: none;
     margin-left: 20px;
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button:hover {
     width: 180px;
-    background: #00B7F1;
+    background: #2AEFFF;
 }
 
 .nav-menu.active .main-menu .nav-links .inline-list ul li .nav-button:hover i {
@@ -540,7 +581,7 @@ header.disable {
 }
 
 .text-underline hr:nth-child(3) {
-    background-color: #00B7F1;
+    background-color: #2AEFFF;
 }
 
 .container .box-title h1 {
@@ -890,6 +931,31 @@ p {
     justify-content: space-between;
 }
 
+.footer-container .footer-bottom .footer-text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-container .footer-bottom .footer-text a:hover {
+    color: #2AEFFF;
+}
+
+.footer-container .footer-bottom .social-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .footer-bottom .social-icons a {
+    color: #657688;
+    margin-bottom: 5px;
+}
+
+.footer-container .footer-bottom .social-icons a:hover {
+    color: #fff;
+}
+
+
 .footer-container .container {
     display: flex;
 }
@@ -958,7 +1024,7 @@ p {
 .footer-container .contact-form button {
     margin: 10px 0px;
     background-color: transparent;
-    border: 1px solid #00B7F1;
+    border: 1px solid #2AEFFF;
     outline: none;
     color: white;
     padding: 10px 20px;
@@ -967,5 +1033,26 @@ p {
 }
 
 .footer-container .contact-form button:hover {
-    background-color: #00B7F1;
+    background-color: #2AEFFF;
+}
+
+.carousel-indicators {
+    justify-content: flex-start !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 6% !important;
+    height: 4px !important;
+    transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, -1.00, 1.00, 0, 0);
+    margin-right: 7px !important;
+    margin-left: 0 !important;
+    transition: all 0.6s ease-in-out !important;
+}
+
+.carousel-indicators .active {
+    width: 10% !important;
 }
