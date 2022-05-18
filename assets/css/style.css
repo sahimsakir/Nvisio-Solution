@@ -917,6 +917,7 @@ p {
 .footer-container .footer-bottom {
     width: 90%;
     height: 15%;
+    margin: 20px 0px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -925,7 +926,7 @@ p {
 }
 
 .footer-container .footer-bottom .footer-text {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1055,4 +1056,14 @@ p {
 
 .carousel-indicators .active {
     width: 10% !important;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu.active .main-menu .footer {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 414px) {
+  .nav-menu.active .main-menu .nav-links {
+    width: 100%;
+  }
 }
